@@ -199,7 +199,5 @@ class XML_RPC
 
         return false;
     }
-
-
-
+    
 }
