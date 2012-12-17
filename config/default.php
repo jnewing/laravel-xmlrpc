@@ -6,7 +6,7 @@
 
 return array(
     // default path if there is one, if not set this to blank
-    'xmlrpc_path' => '/xmlrpc'
+    'xmlrpc_path' => '/xmlrpc',
 
     // xmlrpc port
     'xmlrpc_port' => 8080,

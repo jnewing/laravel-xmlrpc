@@ -58,6 +58,7 @@ class XML_RPC
         $raw_data = file_get_contents(self::Host($host) . ":" . Config::get('xmlrpc::default.xmlrpc_port') . Config::get('xmlrpc::default.xmlrpc_path'), false, $xml_rpc);
 
         return new \SimpleXMLElement($raw_data);
+    }
 
     /**
      * Host()
@@ -70,6 +71,8 @@ class XML_RPC
     {
         if (substr($host, 0, 4) != 'http')
             return "http://{$host}";
+
+        return $host;
     }
 
     /**
